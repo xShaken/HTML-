@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akashi Senior High School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://mybrytfmonline.com/wp-content/uploads/2021/09/6ad4cfbf-5b64-4eac-bef1-2495b9fb44d7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      filter: grayscale(100%);
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      width: 90%;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #000;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      color: #000;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #000;
+      border-radius: 5px;
+    }
+    .btn-primary {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .btn-primary:hover {
+      background-color: #555;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .login-container {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .login-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="login-container">
+      <h2>Akashi SHS</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
